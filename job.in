@@ -1,9 +1,9 @@
 #!/bin/bash -l
-#SBATCH -C haswell
+#SBATCH -C knl
 #SBATCH -p debug
 #SBATCH -N 1
 #SBATCH -t 00:2:00
-#SBATCH --cpu-freq=2300000
+#SBATCH --cpu-freq=1400000
 #SBATCH -J job-@BENCHMARK@
 #SBATCH -o job-@BENCHMARK@.o%j
 #SBATCH -e job-@BENCHMARK@.e%j
