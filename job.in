@@ -1,5 +1,7 @@
 #!/bin/bash -l
 #SBATCH -C knl
+#SBATCH -c 1
+#SBATCH -S 4
 #SBATCH -p debug
 #SBATCH -N 1
 #SBATCH -t 00:2:00

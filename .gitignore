@@ -48,5 +48,6 @@ Thumbs.db
 *.mov
 *.wmv
 
-# IDE files.
+# Build files.
 cmake-build-debug
+build
