@@ -32,6 +32,31 @@ void fill(double* p, int n) {
         p[i] = 2 * dis(gen) - 1;
 }
 
+void fill_deterministic(double* p, int n) {
+    for (int i = 0; i < n; ++i)
+        p[i] = i + 1.0;
+}
+
+void fill_zero(double* p, int n) {
+    for (int i = 0; i < n; ++i)
+        p[i] = 0.0;
+}
+
+void fill_identity(double* p, int n) {
+
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 10; j++) {
+            if (i == j) {
+                p[i*10 + j]= 1.0;
+            } else {
+                p[i*10 + j] = 0.0;
+            }
+        }
+        
+    }
+        
+}
+
 /* The benchmarking program */
 int main(int argc, char** argv) {
     std::cout << "Description:\t" << dgemm_desc << std::endl << std::endl;
